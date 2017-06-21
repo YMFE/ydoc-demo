@@ -36,6 +36,11 @@
                             
                             <a href="js-lib.html">js-lib</a> 
                         </li>
+                        
+                        <li class="">
+                            
+                            <a href="component.html">组件</a> 
+                        </li>
                          
                     </ul>
                 </nav>
@@ -92,7 +97,7 @@
                         <h2 id="js-lib-">js-lib 介绍</h2>
 <p>js-lib示例展示了从js文件的注释中提取信息生成的文档。</p>
 <ul>
-<li>example 代码，文件路径[起始位置-结束位置] 或者直接写 源代码，从文件中读取代码需要在配置文件中配置 <code>&quot;examplePath&quot;</code> 作为 <code>example</code> 文件的路径。</li>
+<li>example 代码，文件路径[起始位置-结束位置] 或者直接写 源代码，从文件中读取代码需要在配置文件中配置 <code>&quot;examplePath&quot;</code> 作为 <code>@example</code> 文件的路径。</li>
 <li>欲显示下面的 “源码位置”，请在配置文件中配置 <code>&quot;source&quot;: true</code></li>
 <li>代码折叠功能，请在配置文件中配置 <code>&quot;foldcode&quot;: true</code>，可全局配置代码折叠，默认6行，如果自定义折叠行数，请在注释块中配置 <code>@foldnumber {Number}</code> Number为自定义折叠行数。</li>
 </ul>
@@ -103,7 +108,7 @@
 <div class="con-list-item">
     <blockquote class="api">
         <h3 id="myOpen" class="page-header subject">
-            myOpen( name, <del>age</del> )
+            myOpen( name[, <del>age</del>] )
             
             <span class="ui-badge">Method</span>
             
@@ -153,7 +158,7 @@
                     <th>类型</th>
                     <th>描述</th>
                     <th>必选</th>
-                    <th>版本</th>
+                    <th>支持版本</th>
                 </tr>
             </thead>
             
@@ -175,10 +180,8 @@
                 <td><del>age描述 </del></td>
                 <td>
                     
-                    <i class="yo-ico glyphicon glyphicon-ok text-success"></i>
-                    
                 </td>
-                <td>2.1.0 <del>2.1.3</del></td>
+                <td>1.0.0 <del>2.1.2</del></td>
             </tr>
             
         </table>
