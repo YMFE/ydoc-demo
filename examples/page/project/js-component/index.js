@@ -5,8 +5,8 @@
  * 除了能给 `dom` 绑定 `tap` 事件之外，它还解决了一些移动端的手势"顽疾"，例如触摸反馈和滚动/触摸的冲突问题。在需要绑定 `tap` 事件的情况下，应该优先使用 `Touchable`，
  * 而不是直接把 `tap` 事件回调绑定给 `dom`。
  *
- * @author jiao.shen
-  * @demo http://doyoe.github.io/Yo/demo/fragment/yo-list.html
+ * @author authorName
+ * @demo http://ued.qunar.com/
  * @example
  * hysdk.checkJsApi({
  *    jsApiList: ['chooseImage'], // 需要检测的JS接口列表
@@ -104,24 +104,6 @@ export default class Touchable extends Component {
     };
 
     render() {
-        if (process.env.NODE_ENV !== 'production') {
-            if (this.props.touchClass == null && !this.props.internalUse) {
-                console.error('yo-touchable: Touchable组件没有设置touchClass, 出于用户体验考虑, 应该尽量给触摸区域添加触摸反馈。');
-            }
-        }
-
-        const onlyChild = React.Children.only(this.props.children);
-        const gestureObj = gesture({
-            component: this,
-            scroller: this.context.scroller,
-            swipeMenuList: this.context.swipeMenuList,
-            activeClass: this.props.touchClass,
-            onTap: this.props.onTap,
-            onTouchStart: this.props.onTouchStart,
-            disabled: this.props.disabled
-        });
-        const { onTouchStart, onTouchMove, onTouchEnd, onTouchCancel } = gestureObj;
-
-        return React.cloneElement(onlyChild, { onTouchStart, onTouchMove, onTouchEnd, onTouchCancel });
+        return React.cloneElement(onlyChild, { onTouchStart, onTouchMove });
     }
 }
