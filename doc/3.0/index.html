@@ -55,11 +55,11 @@
                     
                     <article class="markdown-body">
                          <h3 class="subject" id="效果">效果 <a class="hashlink" href="#效果">#</a></h3><p>左上角有版本切换的按钮，点击即可切换文档版本</p>
-<h3 class="subject" id="关键配置">关键配置 <a class="hashlink" href="#关键配置">#</a></h3><p><code>mutiversion</code> 配置多版本切换，使用此功能需要切换到新的分支(此分支专门用于生成文档)，在新分支的配置文件中添加此配置项
-<code>mutiversion.docbranch</code> 配置新分支(专门用于生成文档的分支)名称
-<code>mutiversion.versions</code> 版本信息
-<code>mutiversion.versions[*].name</code> 版本名称
-<code>mutiversion.versions[*].branch</code> 版本所在的git分支</p>
+<h3 class="subject" id="关键配置">关键配置 <a class="hashlink" href="#关键配置">#</a></h3><p><code>mutiversion</code> 配置多版本切换，使用此功能需要切换到新的分支(此分支专门用于生成文档)，在新分支的配置文件中添加此配置项</p>
+<p><code>mutiversion.docbranch</code> 配置新分支(专门用于生成文档的分支)名称</p>
+<p><code>mutiversion.versions</code> 版本信息</p>
+<p><code>mutiversion.versions[*].name</code> 版本名称</p>
+<p><code>mutiversion.versions[*].branch</code> 版本所在的git分支</p>
 <pre><code>&quot;mutiversion&quot;: { // 配置多版本切换，使用此功能需要切换到新的分支(此分支专门用于生成文档)，在新分支的配置文件中添加此配置项
     &quot;docbranch&quot;: &quot;doc&quot;, // 新分支(专门用于生成文档的分支)名称
     &quot;versions&quot;:[{
