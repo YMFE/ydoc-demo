@@ -4,9 +4,13 @@
 
 ### 关键配置
 `mutiversion` 配置多版本切换，使用此功能需要切换到新的分支(此分支专门用于生成文档)，在新分支的配置文件中添加此配置项
+
 `mutiversion.docbranch` 配置新分支(专门用于生成文档的分支)名称
+
 `mutiversion.versions` 版本信息
+
 `mutiversion.versions[*].name` 版本名称
+
 `mutiversion.versions[*].branch` 版本所在的git分支
 
 ```
