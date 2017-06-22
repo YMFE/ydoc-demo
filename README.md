@@ -8,7 +8,7 @@
 
 YDoc是基于项目代码注释与markdown快速构建文档的工具，目前支持诸如：React Native, JavaScript, CSS, SCSS 等类别。
 
-这里展示了YDoc的几个构建示例。
+这里展示了YDoc的几个构建示例, 请将项目clone到本地进行查看。
 
 ## 构建示例
 
@@ -25,9 +25,3 @@ YDoc是基于项目代码注释与markdown快速构建文档的工具，目前�
 | `*doc`          | 多版本切换        | 示范多版本切换                        |
 
 `*` 注意： 查看多版本切换功能示例需要使用git切换到 `doc` 分支。
-
-## 开发者
-
-* 林洋 <adwon.lin@qunar.com> | <edwon.lim@gmail.com>
-* 董文博 <wenbo.dong@qunar.com>
-* 王丽丽 <leila.wang@qunar.com>
