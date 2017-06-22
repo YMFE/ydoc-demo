@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <meta name="description" content="description of your site">
+    <meta name="author" content="author of the site">
+    <title>ydoc-demo 首页</title>
+    <link rel="stylesheet" href="source/main.css" />  
+</head>
+<body>
+    <div class="ydoc">
+        <header class="ydoc-header">
+            <div class="ydoc-header-area">
+                
+                <a href="http://ued.qunar.com/ymfe/" class="navbar-brand">YMFE</a><div class="m-version"><p class="version-selector" data-target="version">3.0<span data-target="version" class="ydocIcon icon">&#xf3ff;</span></p><ul class="m-version-mask"><li class="m-version-item"><a class="link" href="../1.0/index.html">1.0</a></li>
+<li class="m-version-item"><a class="link" href="../2.0/index.html">2.0</a></li>
+<li class="m-version-item"><a class="link" href="../3.0/index.html">3.0</a></li>
+</ul></div>
+                
+                <button class="ydocIcon navbar-toggle">&#xf020;</button>
+                <nav class="ydoc-nav">
+                    <ul class="navbar-left">
+                         
+                        <li class="active">
+                            
+                            <a href="index.html">首页</a> 
+                        </li>
+                         
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- <header style="height:20px"></header> -->
+        
+        <!-- Docs page layout -->
+        
+        <div class="ydoc-banner-bg">
+            <div class="ydoc-banner ">
+                <div class="ydoc-banner-area">
+                    <h1 >ydoc-demo</h1>
+                    <p class="desc ">Sample application of ydoc.</p>
+                    
+                </div>
+            </div>
+            
+
+            <div class="ydoc-container">
+                 
+                <div class="ydoc-container-content" id="readme">
+                    
+                    <article class="markdown-body">
+                         <h3 class="subject" id="效果">效果 <a class="hashlink" href="#效果">#</a></h3><p>左上角有版本切换的按钮，点击即可切换文档版本</p>
+<h3 class="subject" id="关键配置">关键配置 <a class="hashlink" href="#关键配置">#</a></h3><p><code>mutiversion</code> 配置多版本切换，使用此功能需要切换到新的分支(此分支专门用于生成文档)，在新分支的配置文件中添加此配置项
+<code>mutiversion.docbranch</code> 配置新分支(专门用于生成文档的分支)名称
+<code>mutiversion.versions</code> 版本信息
+<code>mutiversion.versions[*].name</code> 版本名称
+<code>mutiversion.versions[*].branch</code> 版本所在的git分支</p>
+<pre><code>&quot;mutiversion&quot;: { // 配置多版本切换，使用此功能需要切换到新的分支(此分支专门用于生成文档)，在新分支的配置文件中添加此配置项
+    &quot;docbranch&quot;: &quot;doc&quot;, // 新分支(专门用于生成文档的分支)名称
+    &quot;versions&quot;:[{
+        &quot;name&quot;: &quot;1.0&quot;, // 需要生成的版本名称
+        &quot;branch&quot;: &quot;v0.0.1&quot; // 需要生成的版本所在的git分支
+    },{
+        &quot;name&quot;: &quot;2.0&quot;,
+        &quot;branch&quot;: &quot;v0.0.2&quot;
+    },{
+        &quot;name&quot;: &quot;3.0&quot;,
+        &quot;branch&quot;: &quot;v0.0.3&quot;
+    }] // 需要切换的版本信息
+},
+</code></pre>
+                    </article>
+                </div>
+                 
+            </div>
+            
+        </div>
+        
+        <footer class="footer">
+            <div class="copyright">
+                &copy; 2016 <a href="http://ued.qunar.com/ymfe/">YMFE</a> Team. Build by <a href="http://ued.qunar.com/ydoc/">ydoc</a>.
+            </div>
+        </footer>
+    </div>
+
+     
+
+    <script src="source/main.js"></script>
+    <script src="source/app.js"></script>
+        
+
+    </body>
+
+</html>
