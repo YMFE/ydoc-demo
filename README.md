@@ -22,6 +22,7 @@ YDoc是基于项目代码注释与markdown快速构建文档的工具，目前�
 | extension     | 扩展            | 配置自定义的css、js、img等文件           |
 | sidenav       | 侧栏            | 示范侧栏的各种呈现方式                   |
 | homepage      | 首页            | 自定义首页                             |
+| [multifiles](../examples/multifiles/doc/index.html)    |在页面中使用多个文件| 在同一页面中组合使用多个文件              |
 
 ## 开发者
 
