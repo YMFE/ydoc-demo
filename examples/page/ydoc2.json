@@ -47,7 +47,7 @@
         }
     },{
         "name": "component",
-        "title": "组件",
+        "title": "js-component",
         "banner": {
             "title": "组件",
             "description": "组件的说明文档"
@@ -55,6 +55,19 @@
         "content": "./project/js-component/index.js",
         "options": {
             "type": "component", // 类型，可选 component 和 lib，默认 component
+            "source": true // 是否生成源文件预览，默认 false
+        }
+    },{
+        "name": "js-interface",
+        "title": "js-interface",
+        "intro": "./project/js-interface/intro.md",
+        "banner": {
+            "title": "js-interface",
+            "description": "js-interface注释解析"
+        },
+        "content": "./project/js-interface/index.js",
+        "options": {
+            "type": "interface", // 类型，可选 component 、 lib 和 interface，默认 component
             "source": true // 是否生成源文件预览，默认 false
         }
     }]

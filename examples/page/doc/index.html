@@ -9,7 +9,9 @@
     <meta name="description" content="description of your site">
     <meta name="author" content="author of the site">
     <title>index 首页</title>
-    <link rel="stylesheet" href="source/main.css" />  
+    <link rel="stylesheet" href="source/main.css" />
+    
+    
 </head>
 <body>
     <div class="ydoc">
@@ -39,7 +41,12 @@
                         
                         <li class="">
                             
-                            <a href="component.html">组件</a> 
+                            <a href="component.html">js-component</a> 
+                        </li>
+                        
+                        <li class="">
+                            
+                            <a href="js-interface.html">js-interface</a> 
                         </li>
                          
                     </ul>
@@ -63,7 +70,7 @@
 
             <div class="ydoc-container">
                  
-                <div class="ydoc-container-content" id="readme">
+                <div class="ydoc-container-content " id="readme">
                     
                     <article class="markdown-body">
                          <h2 class="subject" id="案例介绍">案例介绍 <a class="hashlink" href="#案例介绍">#</a></h2><p>本案例包含一个完整的前端框架所包含的文档信息，解析React Native, JavaScript, CSS, SCSS文件的注释。</p>
@@ -86,47 +93,6 @@
 
     <script src="source/main.js"></script>
     <script src="source/app.js"></script>
-    
-    <script>
-        var lineHeight = 17.4;
-        var EXAMPLE_MAX_HEIGHT;
-
-        function fold() {
-            // 折叠code
-            $('.markdown-body pre').css({
-                "line-height": lineHeight + "px"
-            });
-            $('.markdown-body pre').map(function(i, item) {
-                var $item = $(item);
-                var foldnumber = $item.data('foldnumber');
-                EXAMPLE_MAX_HEIGHT = lineHeight * (foldnumber || 6);
-                if ($item.height() > EXAMPLE_MAX_HEIGHT) {
-                    $item.css({
-                        "padding-bottom": 30
-                    });
-                    $item.find('code').height(EXAMPLE_MAX_HEIGHT);
-                    $item.append('<span class="extend">展开更多……</span>');
-                };
-            });
-            $('.ydoc-example').delegate('.extend', 'click', function() {
-                var $this = $(this);
-                $this.removeClass('extend').addClass('fold');
-                $this.html('折叠代码');
-                $this.prev().height('auto');
-                $this.prev().parent().height('auto');
-            });
-            $('.ydoc-example').delegate('.fold', 'click', function() {
-                var $this = $(this);
-                var foldnumber = $this.parent().data('foldnumber');
-                EXAMPLE_MAX_HEIGHT = lineHeight * (foldnumber || 6);
-                $this.removeClass('fold').addClass('extend');
-                $this.parent().height(EXAMPLE_MAX_HEIGHT); // pre
-                $this.prev().height(EXAMPLE_MAX_HEIGHT); // code
-                $this.html("展开更多……");
-            });
-        }
-        $(document).ready(fold);
-    </script>
         
 
     </body>

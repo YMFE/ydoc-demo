@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <meta name="description" content="description of your site">
     <meta name="author" content="author of the site">
-    <title>index js-lib</title>
+    <title>index js-interface</title>
     <link rel="stylesheet" href="source/main.css" />
     
     
@@ -34,7 +34,7 @@
                             <a href="css.html">CSS</a> 
                         </li>
                         
-                        <li class="active">
+                        <li class="">
                             
                             <a href="js-lib.html">js-lib</a> 
                         </li>
@@ -44,7 +44,7 @@
                             <a href="component.html">js-component</a> 
                         </li>
                         
-                        <li class="">
+                        <li class="active">
                             
                             <a href="js-interface.html">js-interface</a> 
                         </li>
@@ -61,8 +61,8 @@
         <div class="ydoc-banner-bg">
             <div class="ydoc-banner ">
                 <div class="ydoc-banner-area">
-                    <h1 >js-lib</h1>
-                    <p class="desc ">js-lib注释解析</p>
+                    <h1 >js-interface</h1>
+                    <p class="desc ">js-interface注释解析</p>
                     
                 </div>
             </div>
@@ -80,17 +80,17 @@
                                 <!-- <li  > -->
                                 <li >
                                     
-                                    <a href="#Router">Router</a> 
+                                    <a href="#获取用户信息">获取用户信息</a> 
                                 </li>
                                    
                                 <ul class="nav docs-sidenav-extend"  >
                                 
                                     <li >
-                                        <a href="#myOpen">myOpen</a>
+                                        <a href="#-qhot-v2-addModule">/qhot/v2/addModule</a>
                                     </li>
                                      
                                     <li >
-                                        <a href="#getInfo">getInfo</a>
+                                        <a href="#myOpen">myOpen</a>
                                     </li>
                                  
                                 </ul>
@@ -110,23 +110,17 @@
 </ul>
  <div class="docs-section">
 
-<h2 id="Router" class="page-header subject">Router API <a class="hashlink" href="#Router">#</a></h2>
+<h2 id="获取用户信息" class="page-header subject">获取用户信息<a class="hashlink" href="#获取用户信息">#</a></h2>
 
 <div class="con-list-item">
     <blockquote class="api">
-        <h3 id="myOpen" class="page-header subject">
-            myOpen( name[, <del>age</del>] )
+        <h3 id="-qhot-v2-addModule" class="page-header subject">
+            /qhot/v2/addModule
             
-            <span class="ui-badge">Method</span>
-            
-            
-            
-            <span class="ui-badge">1.0.0</span>
+            <span class="ui-badge">GET</span>
             
             
-            <span class="ui-badge">static</span>
-            
-            <a class="hashlink" href="#myOpen">#</a>
+            <a class="hashlink" href="#-qhot-v2-addModule">#</a>
         </h3>
     </blockquote>
     <p>
@@ -135,17 +129,9 @@
     </p>
     
     <p>
-        <small class="text-muted">缩略:</small>
-        XXX.open
-    </p>
-    
-    
-    
-    <p>
         <small class="text-muted">源码位置:</small>
-        <a href="./static/project/js-lib/index.js.html#0" target="_blank">./project/js-lib/index.js:0</a>
+        <a href="./static/project/js-interface/index.js.html#0" target="_blank">./project/js-interface/index.js:0</a>
     </p>
-    
     
     
     <p>
@@ -195,25 +181,17 @@
     </div>
     
     
-    <p>
-        <small class="text-muted">返回值:</small>
-        <mark>Object</mark> 
-    </p>
-    
-    
-    
-    <div>示例</div>
-    <pre class="ydoc-example" data-foldnumber=3 需要在配置文件中配置foldnumber，默认折叠6行，可以在这里自定义配置行数><code class="js-code"><span class="token function">myOpen</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    type<span class="token punctuation">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 注释</span>
-    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'http://ymfe.tech/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    fail<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fail'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
+    <div>示例：</div>
+    <pre class="ydoc-example" ><code class="js-code"> <span class="token function">myOpen</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 注释</span>
+   success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'http://ymfe.tech/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   fail<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fail'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
     
     
     <p>
@@ -228,17 +206,15 @@
 
 <div class="con-list-item">
     <blockquote class="api">
-        <h3 id="getInfo" class="page-header subject">
-            getInfo(  )
+        <h3 id="myOpen" class="page-header subject">
+            myOpen
             
-            <span class="ui-badge">Method</span>
-            
+            <span class="ui-badge">POST</span>
             
             
             <span class="ui-badge">1.0.0</span>
             
-            
-            <a class="hashlink" href="#getInfo">#</a>
+            <a class="hashlink" href="#myOpen">#</a>
         </h3>
     </blockquote>
     <p>
@@ -246,27 +222,27 @@
         
     </p>
     
-    
-    
     <p>
         <small class="text-muted">源码位置:</small>
-        <a href="./static/project/js-lib/index.js.html#19" target="_blank">./project/js-lib/index.js:19</a>
+        <a href="./static/project/js-interface/index.js.html#24" target="_blank">./project/js-interface/index.js:24</a>
     </p>
     
     
     
-    
-    <p>
-        <small class="text-muted">返回值:</small>
-        <mark>String</mark> 
-    </p>
-    
-    
-    
-    <div>示例</div>
-    <pre class="ydoc-example" ><code class="js-code"><span class="token function">getInfo</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <div>示例：</div>
+    <pre class="ydoc-example" ><code class="js-code"><span class="token function">getInfo</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token string">'姓名: '</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">', 年龄: '</span> <span class="token operator">+</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+ <span class="token punctuation">}</span>
+ <span class="token function">myOpen</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 注释</span>
+   success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'http://ymfe.tech/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   fail<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fail'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
     
     
     <p>

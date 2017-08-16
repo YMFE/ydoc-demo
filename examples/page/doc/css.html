@@ -9,7 +9,9 @@
     <meta name="description" content="description of your site">
     <meta name="author" content="author of the site">
     <title>index CSS</title>
-    <link rel="stylesheet" href="source/main.css" />  
+    <link rel="stylesheet" href="source/main.css" />
+    
+    
 </head>
 <body>
     <div class="ydoc">
@@ -39,7 +41,12 @@
                         
                         <li class="">
                             
-                            <a href="component.html">组件</a> 
+                            <a href="component.html">js-component</a> 
+                        </li>
+                        
+                        <li class="">
+                            
+                            <a href="js-interface.html">js-interface</a> 
                         </li>
                          
                     </ul>
@@ -63,10 +70,10 @@
 
             <div class="ydoc-container">
                  
-                <div class="ydoc-container-content">
+                <div class="ydoc-container-content ">
                     
                     
-                    <div class="content-left " role="complementary">
+                    <div class="content-left staticsidenav" role="complementary">
                         <nav class="docs-sidebar hidden-print hidden-xs hidden-sm">
                             <ul class="nav docs-sidenav">
                                  
@@ -79,11 +86,11 @@
                                 <ul class="nav docs-sidenav-extend"  >
                                 
                                     <li >
-                                        <a href="#m-header-icon">m-header-icon</a>
+                                        <a href="#undefined">m-header-icon</a>
                                     </li>
                                      
                                     <li >
-                                        <a href="#m-header-title">m-header-title</a>
+                                        <a href="#undefined">m-header-title</a>
                                     </li>
                                  
                                 </ul>
@@ -92,7 +99,7 @@
                         </nav>
                     </div>
                     
-                    <div class="content-right markdown-body " role="main">
+                    <div class="content-right markdown-body use-sidebar" role="main">
 
                         <h2 id="css-">css 介绍</h2>
 <p>css示例展示了从css文件的注释中提取信息生成的文档。</p>
@@ -174,7 +181,7 @@
         <p>
             <small class="text-muted">示例:</small>
         </p>
-        <pre class="ydoc-example" data-foldnumber=8 代码块折叠行数><code><span class="token selector">body</span><span class="token punctuation">{</span>
+        <pre class="ydoc-example" data-foldnumber=8 代码块折叠行数><code class="js-code"><span class="token selector">body</span><span class="token punctuation">{</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
         
@@ -204,7 +211,7 @@
         <p>
             <small class="text-muted">示例:</small>
         </p>
-        <pre class="ydoc-example" data-foldnumber=8 代码块折叠行数><code><span class="token selector">body</span><span class="token punctuation">{</span>
+        <pre class="ydoc-example" data-foldnumber=8 代码块折叠行数><code class="js-code"><span class="token selector">body</span><span class="token punctuation">{</span>
     <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
@@ -237,47 +244,6 @@
 
     <script src="source/main.js"></script>
     <script src="source/app.js"></script>
-    
-    <script>
-        var lineHeight = 17.4;
-        var EXAMPLE_MAX_HEIGHT;
-
-        function fold() {
-            // 折叠code
-            $('.markdown-body pre').css({
-                "line-height": lineHeight + "px"
-            });
-            $('.markdown-body pre').map(function(i, item) {
-                var $item = $(item);
-                var foldnumber = $item.data('foldnumber');
-                EXAMPLE_MAX_HEIGHT = lineHeight * (foldnumber || 6);
-                if ($item.height() > EXAMPLE_MAX_HEIGHT) {
-                    $item.css({
-                        "padding-bottom": 30
-                    });
-                    $item.find('code').height(EXAMPLE_MAX_HEIGHT);
-                    $item.append('<span class="extend">展开更多……</span>');
-                };
-            });
-            $('.ydoc-example').delegate('.extend', 'click', function() {
-                var $this = $(this);
-                $this.removeClass('extend').addClass('fold');
-                $this.html('折叠代码');
-                $this.prev().height('auto');
-                $this.prev().parent().height('auto');
-            });
-            $('.ydoc-example').delegate('.fold', 'click', function() {
-                var $this = $(this);
-                var foldnumber = $this.parent().data('foldnumber');
-                EXAMPLE_MAX_HEIGHT = lineHeight * (foldnumber || 6);
-                $this.removeClass('fold').addClass('extend');
-                $this.parent().height(EXAMPLE_MAX_HEIGHT); // pre
-                $this.prev().height(EXAMPLE_MAX_HEIGHT); // code
-                $this.html("展开更多……");
-            });
-        }
-        $(document).ready(fold);
-    </script>
         
 
     </body>

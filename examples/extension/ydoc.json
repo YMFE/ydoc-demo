@@ -7,15 +7,10 @@
         "home": "YMFE", // logo
         "homeUrl": "http://ued.qunar.com/ymfe/" // logourl
     },
-    "options": {
-        "insertCSS": ["./style/insert0.css","./style/insert1.css"],  // 配置css路径，可覆盖默认样式； 相对路径需要配置resources路径
-        "insertJS": ["./scripts/insert.js", "./plugins/plugin.js"]  // 配置js路径；相对路径需要配置resources路径
-    },
     "resources": { //将配置的文件夹拷贝至生成文档的文件夹下
         "img": "./images", // key值为source
-        "style": "./style/", // 指定insertCSS后，配置css的目录
-        "scripts": "./scripts/", // 指定insertJS后，配置js的目录
-        "plugins": "./plugins/" // 指定insertJS后，配置js的目录
+        "styles": "./styles/", // 指定insertCSS后，配置css的目录
+        "scripts": "./scripts/" // 指定insertJS后，配置js的目录
     },
     "pages": [{
         "name": "index", // Page Name 会根据他生成 html 文件，例: index.html

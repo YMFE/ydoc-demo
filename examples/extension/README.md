@@ -9,9 +9,9 @@
 
 ### 关键配置
 
-`options` 中配置 `insertCSS`和`insertJS`，分别是向页面添加自定义的css与js文件。
-
 `resources` 中配置路径，可以拷贝文件夹到生成文档的目录中.
+
+其中`scripts`与`plugins`字段配置的文件将分别以js/css文件的形式被引入到每个页面的尾部。
 
 ```
 "options": {
